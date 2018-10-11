@@ -1,0 +1,139 @@
+body{
+	background:url(https://res.cloudinary.com/dmelnrf1p/image/upload/v1539275608/piano_backmain.jpg);
+	background-size: cover;
+}
+button{
+	outline: none;
+}
+.div3{
+	width: 148px;
+	height: 50px;
+	background-color: black;
+	position: absolute;
+	top: 10.9%;
+	left: 46%;
+	opacity: 0.9;
+	border-radius: 40%;
+}
+.div{
+	width: 672px;
+	height: 255px;
+	background-image: url(https://res.cloudinary.com/dmelnrf1p/image/upload/v1539275629/piano_back13.jpg);
+	background-size: cover;
+	border:#0000 5px solid;
+	position: absolute;
+	top: 13%;
+	left: 450px;
+	border:black 1.6px solid;
+	border-radius: 8%;
+	opacity: 1;
+}
+.div2{
+	width: 130px;
+	height: 35px;
+   position: absolute;
+   top: 8.5%;
+   left: 46.6%;
+}
+.name{
+	width: 100%;
+	height: 100%;
+	font-style: oblique;
+	color: #CC852C  ;
+	background-image: url(file:///C:/Users/suraj%20singh/Desktop/background/piano_back13.jpeg);
+   border-radius: 40%;
+}
+#aa,#ab,#aa,#ac,#ad,#ae,#af,#ag,#ah,#ai,#aj,#ak,#al{
+	display: none;
+}
+
+
+.key{
+	width: 50px;
+	height: 200px;
+	border:2px solid;
+	position: absolute;
+	top: 38px;
+	border-radius: 10px;
+	transition: transform 300ms ease-out;
+}
+.key.active{
+ transform: translate(0px,-10px) scale(0.9,0.9) !important;
+ transition: transform 300ms ease-out;
+}
+
+.aa{
+	left: 46px;
+}
+
+.ab{
+	left: 94px;
+}
+.ac{
+	left: 142px;
+}
+.ad{
+	left: 190px;
+}
+.ae{
+	left: 238px;
+}
+.af{
+	left: 286px;
+}
+.ag{
+	left: 334px;
+}
+.ah{
+	left: 382px;
+}
+.ai{
+	left: 430px;
+}
+.aj{
+	left: 478px;
+}
+.ak{
+	left: 526px;
+}
+.al{
+	left: 574px;
+}
+.key2{
+	background: black;
+	width:30px;
+	height: 150px;
+	border:2px solid;
+	position: absolute;
+	top: 38px;
+	border-radius:  10%;
+	transition: transform 300ms ease-out,transform 300ms ease-out;
+}
+.key2:active{
+	transform: translate(0px,-10px) scale(0.9,0.9);
+ transition: transform 200ms ease-out;
+}
+.ba{
+	left: 562px;
+}
+.bb{
+	left: 514px;
+}
+.bc{
+	left: 466px;
+}
+.bd{
+	left: 370px;
+}
+.be{
+	left: 322px;
+}
+.bf{
+	left: 226px;
+}
+.bg{
+	left: 178px;
+}
+.bh{
+	left: 130px;
+}

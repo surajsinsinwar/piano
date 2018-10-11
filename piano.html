@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="piano.css" >
+	<script >
+		var toggleClass = btn => {
+			$(btn).addClass('active').delay(200);
+			setTimeout(()=> $(btn).removeClass('active'), 200 );
+		};
+		function a(btn) {
+			var a=document.getElementById('aa');
+			a.play();
+			toggleClass(btn);
+		}
+		function b(btn) {
+			var b=document.getElementById('ab');
+			b.play();
+			toggleClass(btn);
+		}
+		function c(btn) {
+			var b=document.getElementById('ac');
+			b.play();
+			toggleClass(btn);
+		}
+		function d(btn) {
+			var b=document.getElementById('ad');
+			b.play();
+			toggleClass(btn);
+		}
+		function e(btn) {
+			var b=document.getElementById('ae');
+			b.play();
+			toggleClass(btn);
+		}
+		function f(btn) {
+			var b=document.getElementById('af');
+			b.play();
+			toggleClass(btn);
+		}
+		function g(btn) {
+			var b=document.getElementById('ag');
+			b.play();
+			toggleClass(btn);
+		}
+		function h(btn) {
+			var b=document.getElementById('ah');
+			b.play();
+			toggleClass(btn);
+		}
+		function i(btn) {
+			var b=document.getElementById('ai');
+			b.play();
+			toggleClass(btn);
+		}
+		function j(btn) {
+			var b=document.getElementById('aj');
+			b.play();
+			toggleClass(btn);
+		}
+		function k(btn) {
+			var b=document.getElementById('ak');
+			b.play();
+			toggleClass(btn);
+		}
+		function l(btn) {
+			var b=document.getElementById('al');
+			b.play();
+			toggleClass(btn);
+		}
+   document.onkeydown = function(z){
+   		if(z.which === 65){ a(document.getElementsByClassName('aa')[0]); }  //a   
+   		else if(z.which === 83){ b(document.getElementsByClassName('ab')[0]);} //s
+   		else if(z.which === 68){ c(document.getElementsByClassName('ac')[0]);}//d
+   		else if(z.which === 70){ d(document.getElementsByClassName('ad')[0]);}//f
+   		else if(z.which === 72){ e(document.getElementsByClassName('ae')[0]);}//h
+   		else if(z.which === 74){ f(document.getElementsByClassName('af')[0]);}//j
+   		else if(z.which === 75){ g(document.getElementsByClassName('ag')[0]);}//k
+   		else if(z.which === 76){ h(document.getElementsByClassName('ah')[0]);}//l
+   		else if(z.which === 67){ i(document.getElementsByClassName('ai')[0]);}//c
+   		else if(z.which === 86){ j(document.getElementsByClassName('aj')[0]);}//v
+   		else if(z.which === 66){ k(document.getElementsByClassName('ak')[0]);}//b
+   		else if(z.which === 78){ l(document.getElementsByClassName('al')[0]);}//n
+   }
+	</script>
+	
+</head>
+<body>
+	<div class="div3"></div>
+	<div class="div">
+
+	<audio id="aa" preload="auto">
+		<source src="https://res.cloudinary.com/dmelnrf1p/video/upload/v1539257275/piano-res/a.wav" type="" media="audio/mp3">
+	</audio>
+    <button class="aa key" onclick="a(this)" type="button">a</button>
+
+    <audio id="ab" preload="auto">
+		<source src="https://res.cloudinary.com/dmelnrf1p/video/upload/v1539257349/piano-res/b.wav" type="" media="audio/mp3">
+	</audio>
+    <button class="ab key" onclick="b(this)">s</button>
+
+    <audio id="ac" preload="auto">
+		<source src="https://res.cloudinary.com/dmelnrf1p/video/upload/v1539257485/piano-res/gg.wav" type="" media="audio/mp3">
+	</audio>
+    <button class="ac key" onclick="c(this)">d</button>
+
+    <audio id="ad" preload="auto">
+		<source src="https://res.cloudinary.com/dmelnrf1p/video/upload/v1539257362/piano-res/bb.wav" type="" media="audio/mp3">
+	</audio>
+    <button class="ad key" onclick="d(this)">f</button>
+
+    <audio id="ae" preload="auto">
+		<source src="https://res.cloudinary.com/dmelnrf1p/video/upload/v1539257377/piano-res/c.wav" type="" media="audio/mp3">
+		
+	</audio>
+    <button class="ae key" onclick="e(this)">h</button>
+
+    <audio id="af" preload="auto">
+		<source src="https://res.cloudinary.com/dmelnrf1p/video/upload/v1539257389/piano-res/cc.wav" type="" media="audio/mp3">
+	</audio>
+    <button class="af key" onclick="f(this)">j</button>
+
+    <audio id="ag" preload="auto">
+		<source src="https://res.cloudinary.com/dmelnrf1p/video/upload/v1539257403/piano-res/d.wav" type="" media="audio/mp3">
+	</audio>
+    <button class="ag key" onclick="g(this)">k</button>
+
+    <audio id="ah" preload="auto">
+		<source src="https://res.cloudinary.com/dmelnrf1p/video/upload/v1539257412/piano-res/e.wav" type="" media="audio/mp3">
+	</audio>
+    <button class="ah key" onclick="h(this)">l</button>
+
+    <audio id="ai" preload="auto">
+		<source src="https://res.cloudinary.com/dmelnrf1p/video/upload/v1539257432/piano-res/eb.wav" type="" media="audio/mp3">
+	</audio>
+    <button class="ai key" onclick="i(this)">c</button>
+
+    <audio id="aj" preload="auto">
+		<source src="https://res.cloudinary.com/dmelnrf1p/video/upload/v1539257444/piano-res/f.wav" type="" media="audio/mp3">
+	</audio>
+    <button class="aj key" onclick="j(this)">v</button>
+
+    <audio id="ak" preload="auto">
+		<source src="https://res.cloudinary.com/dmelnrf1p/video/upload/v1539257453/piano-res/ff.wav" type="" media="audio/mp3">
+	</audio>
+    <button class="ak key" onclick="k(this)">b</button>
+
+    <audio id="al" preload="auto">
+		<source src="https://res.cloudinary.com/dmelnrf1p/video/upload/v1539257477/piano-res/g.wav" type="" media="audio/mp3">
+	</audio>
+    <button class="al key" onclick="l(this)">n</button>
+
+
+    
+    <button class="ba key2"></button>
+    <button class="bb key2"></button>
+    <button class="bc key2"></button>
+    <button class="bd key2"></button>
+    <button class="be key2"></button>
+    <button class="bf key2"></button>
+    <button class="bg key2"></button>
+    <button class="bh key2"></button>
+    </div>
+<div class="div2">
+		<h1 class="name">* Suraj *</h1>
+	</div>
+
+</body>
+</html>
